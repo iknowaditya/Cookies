@@ -35,6 +35,9 @@ app.use(cookieParser());
 // Routes..
 app.use("/api", userRoute);
 app.use("/v1", getUserRoute);
+app.use("/", (req, res) => {
+  res.send("Server is running...");
+});
 
 // Listen to the server..
 app.listen(PORT, () => {
