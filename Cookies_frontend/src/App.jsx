@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import Editor from "./Components/Editor";
 import Admin from "./Components/Admin";
 import Lounge from "./Components/Lounge";
+import Hero from "./Components/Hero";
 import Home from "./Pages/Home";
 import RequireAuth from "./Components/RequireAuth";
 import Unauthorized from "./Components/Unaurthorized";
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <Routes>
         {/* Public Routes */}
+        <Route path="/" element={<Hero />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 
