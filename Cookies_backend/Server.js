@@ -12,7 +12,8 @@ const PORT = process.env.PORT || 8080;
 // Enable CORS
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    //origin: "http://localhost:5173",
+    origin: "https://user-login-jwt-auth-frontend.vercel.app",
     credentials: true,
   })
 );
